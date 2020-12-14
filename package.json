@@ -1,0 +1,15 @@
+{
+  "name": "design-project",
+  "version": "1.0.0",
+  "description": "Backend and database for design project",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main"
+  },
+  "author": "Bobby Robin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.0.4"
+  }
+}
