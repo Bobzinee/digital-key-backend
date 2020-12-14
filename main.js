@@ -2,11 +2,11 @@ const app = require('express')();
 const http = require('http').createServer(app);
 const port = process.env.PORT || 3000;
 const io = require('socket.io')(http);
-const path = require('path');
+// const path = require('path');
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '/index.html'));
-});
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname + '/index.html'));
+// });
 
 io.on('connection', (socket) => {
   console.log('a user connected');
@@ -21,6 +21,6 @@ io.on('connection', (socket) => {
   // socket.broadcast.emit("");
 });
 
-http.listen(3000, () => {
+http.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
